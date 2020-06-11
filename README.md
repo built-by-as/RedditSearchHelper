@@ -7,6 +7,7 @@ A Chrome extension that adds the post date(how long ago), the number of comments
 ## Installation
 
 Chrome Web Store:
+https://chrome.google.com/webstore/detail/reddit-search-helper/laladmlmbneplheiajfdpcephiehoifh
 
 Locally:
 1. Open the Extension Management page by navigating to chrome://extensions.
