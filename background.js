@@ -13,7 +13,7 @@ async function performRequest(request) {
     let body = await response.text()
     let parser = new DOMParser()
     let doc = parser.parseFromString(body, "text/html")
-    let findDateResult = doc.evaluate("//a[starts-with(@id, 'PostTopMeta--Created')]", doc, null,
+    let findDateResult = doc.evaluate("//a[@data-click-id='timestamp']", doc, null,
       XPathResult.ANY_TYPE, null)
     let dateElement = findDateResult.iterateNext()
     let findDescriptionResult = doc.evaluate("//meta[@property='og:description']", doc, null, 
