@@ -1,5 +1,5 @@
 function enrichSearchResults(contextNode = document) {
-  var googleSearchLinks = document.evaluate("//div[@class=\"g\"]//a[starts-with(@href, 'https://www.reddit.com') and not(@rsh-processed)]", 
+  var googleSearchLinks = document.evaluate("//div[starts-with(@class, \"g \")]//a[starts-with(@href, 'https://www.reddit.com') and not(@rsh-processed)]", 
   contextNode, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null)
 
   for ( let i = 0; i < googleSearchLinks.snapshotLength; i++) {
